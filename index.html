@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 3</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta charset="utf-8">
+</head>
+<body class="body">
+	<h1 class="h1">Posición del mouse</h1>
+	<div onmouseout="out();" onmouseover="si();" id="div" class="cuadro"></div>
+	<script>
+
+		function si()
+		{
+			document.getElementById("div").innerHTML="El mouse está adentro";
+			console.log("Adentro")
+		}
+		function out()
+		{
+			document.getElementById("div").innerHTML="El mouse está afuera";
+			console.log("afuera")
+		}
+		
+		
+	</script>
+</body>
+</html>
